@@ -1,0 +1,108 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header .logo {
+    width: 150px;
+    height: auto;
+}
+
+header h1 {
+    margin: 20px 0 10px 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.design-element {
+    width: 80%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 10px 0 40px 0;
+}
+
+.card-container {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.card-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.card h2 {
+    margin: 20px 0;
+    font-size: 2.5em;
+}
+
+.card p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.info {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    background: transparent;
+    padding: 10px 0;
+}
+
+
+
+
+
+
+
