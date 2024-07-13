@@ -79,6 +79,7 @@ nav {
 }
 
 .nav-links ul {
+    display: flex;
     gap: 16px;
 }
 
@@ -95,12 +96,15 @@ nav {
 }
 
 .search-bar {
+    display: flex;
+    align-items: center;
     height: 32px;
     gap: 8px;
 }
 
 .news-input {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     height: 100%;
     padding-inline: 12px;
     border-radius: 4px;
@@ -128,6 +132,7 @@ main {
 }
 
 .cards-container {
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 20px;
@@ -135,8 +140,8 @@ main {
 }
 
 .card {
-    width: 100%; /* Changed to 100% width for smaller screens */
-    max-width: 360px; /* Added max-width for larger screens */
+    width: 100%;
+    max-width: 360px;
     min-height: 400px;
     box-shadow: 0 0 4px var(--box-shadow-color);
     border-radius: 4px;
@@ -192,8 +197,8 @@ main {
 }
 
 .saved-articles .card {
-    flex: 0 1 100%; /* Changed to 100% width for smaller screens */
-    max-width: 360px; /* Added max-width for larger screens */
+    flex: 0 1 100%;
+    max-width: 360px;
 }
 
 .save-button,
@@ -218,7 +223,7 @@ main {
 /* Responsive design */
 @media (min-width: 600px) {
     .news-input {
-        width: 300px; /* Larger input field for larger screens */
+        max-width: 300px; /* Larger input field for larger screens */
     }
 
     .cards-container {
@@ -249,6 +254,7 @@ main {
         max-width: 360px; /* Keep saved articles card width consistent */
     }
 }
+
 
 
 
